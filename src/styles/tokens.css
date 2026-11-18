@@ -1,0 +1,69 @@
+:root {
+  /* Colors */
+  --bg-primary: #050907;
+  --bg-surface: #07110C;
+  --bg-surface-elevated: #0B1510;
+  --bg-surface-slate: #101820;
+  --ead-green: #007749;
+  --ead-green-light: #74AA50;
+  --bg-ead-ambient:
+    radial-gradient(ellipse 68% 65% at 12% 68%, rgba(0, 119, 73, 0.44) 0%, rgba(7, 17, 12, 0.26) 46%, transparent 78%),
+    radial-gradient(ellipse 62% 58% at 88% 22%, rgba(116, 170, 80, 0.22) 0%, rgba(0, 119, 73, 0.24) 38%, transparent 76%),
+    radial-gradient(ellipse 50% 45% at 52% 95%, rgba(0, 119, 73, 0.22) 0%, transparent 72%),
+    linear-gradient(135deg, #050907 0%, #0B1510 52%, #07110C 100%);
+  --bg-ead-about:
+    radial-gradient(ellipse 65% 70% at 6% 20%, rgba(0, 119, 73, 0.26) 0%, transparent 72%),
+    radial-gradient(ellipse 55% 60% at 94% 85%, rgba(116, 170, 80, 0.14) 0%, transparent 74%),
+    linear-gradient(165deg, #050907 0%, #07110C 55%, #0B1510 100%);
+  --bg-ead-stats:
+    radial-gradient(ellipse 75% 70% at 50% 0%, rgba(0, 119, 73, 0.3) 0%, rgba(11, 21, 16, 0.18) 48%, transparent 78%),
+    linear-gradient(180deg, #07110C 0%, #0B1510 55%, #050907 100%);
+  --bg-ead-applications:
+    radial-gradient(ellipse 70% 65% at 15% 25%, rgba(0, 119, 73, 0.38) 0%, rgba(11, 21, 16, 0.2) 48%, transparent 78%),
+    radial-gradient(ellipse 60% 60% at 88% 78%, rgba(116, 170, 80, 0.2) 0%, rgba(0, 119, 73, 0.16) 45%, transparent 76%),
+    linear-gradient(155deg, #07110C 0%, #0B1510 50%, #101820 100%);
+  --bg-ead-categories:
+    radial-gradient(ellipse 68% 60% at 86% 18%, rgba(0, 119, 73, 0.3) 0%, transparent 74%),
+    radial-gradient(ellipse 62% 58% at 14% 82%, rgba(116, 170, 80, 0.16) 0%, rgba(7, 17, 12, 0.18) 46%, transparent 76%),
+    linear-gradient(170deg, #050907 0%, #0B1510 52%, #07110C 100%);
+  --bg-ead-footer:
+    radial-gradient(ellipse 65% 65% at 22% 85%, rgba(0, 119, 73, 0.24) 0%, transparent 75%),
+    radial-gradient(ellipse 55% 55% at 85% 20%, rgba(116, 170, 80, 0.12) 0%, transparent 72%),
+    linear-gradient(180deg, #07110C 0%, #050907 100%);
+  --bg-ead-section-glow: var(--bg-ead-categories);
+  --bg-button: #c9d0d2;
+  --bg-button-hover: #ffffff;
+  --text-primary: #d4dcd8;
+  --text-white: #ffffff;
+  --text-muted: #98a8a0;
+  --text-dimmed: #72857c;
+  --text-dark: #050907;
+  --border-subtle: rgba(116, 170, 80, 0.18);
+  --border-medium: rgba(116, 170, 80, 0.36);
+  --border-focus: #74AA50;
+
+  /* Typography */
+  --font-headline: 'Stack Sans Headline', 'FragmentNoticeHeadline', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Stack Sans Text', 'FragmentNoticeText', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fragment Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing & Layout */
+  --container-max-width: 1400px;
+  --header-height: 82px;
+  --header-padding: clamp(1rem, 3vw, 2.5rem);
+  --page-padding: clamp(1.25rem, 4vw, 3.5rem);
+  --section-gap: clamp(4rem, 8vw, 8.5rem);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 9999px;
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 0.2s;
+  --duration-normal: 0.35s;
+  --duration-slow: 0.6s;
+}
