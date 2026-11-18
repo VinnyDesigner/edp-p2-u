@@ -17,7 +17,7 @@ export const Preloader = () => {
     if (isHeadless) return;
 
     // Check if previously loaded in session
-    const hasLoaded = sessionStorage.getItem('fragment-preloader-complete');
+    const hasLoaded = sessionStorage.getItem('edp-preloader-complete');
     if (hasLoaded) {
       setVisible(false);
       return;
@@ -28,7 +28,7 @@ export const Preloader = () => {
       setTimeout(() => {
         setVisible(false);
         try {
-          sessionStorage.setItem('fragment-preloader-complete', '1');
+          sessionStorage.setItem('edp-preloader-complete', '1');
         } catch (e) {}
       }, 400);
     }, 1000);

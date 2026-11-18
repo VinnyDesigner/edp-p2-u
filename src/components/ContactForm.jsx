@@ -1,345 +1,162 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { RollText } from './RollLink';
 import { useLanguage } from '../context/LanguageContext';
 
 export const ContactForm = () => {
-  const { lang, getPath, t } = useLanguage();
-  const formCopy = t.contactPage.form;
-
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
-    company: '',
+    organization: '',
     email: '',
-    budget: '',
+    topic: '',
     message: ''
   });
-
-  const [errors, setErrors] = useState({});
-  const [submitting, setSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-
-  const validate = () => {
-    const errs = {};
-    if (!formData.name.trim()) {
-      errs.name = lang === 'pl' ? 'Imię jest wymagane' : 'Name is required';
-    }
-    if (!formData.email.trim()) {
-      errs.email = lang === 'pl' ? 'Email jest wymagany' : 'Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      errs.email = lang === 'pl' ? 'Podaj prawidłowy adres email' : 'Please provide a valid email';
-    }
-    if (!formData.budget) {
-      errs.budget = lang === 'pl' ? 'Wybierz szacowany budżet' : 'Please select a budget range';
-    }
-    if (!formData.message.trim()) {
-      errs.message = lang === 'pl' ? 'Wiadomość jest wymagana' : 'Message is required';
-    }
-    setErrors(errs);
-    return Object.keys(errs).length === 0;
-  };
+  const [statusMessage, setStatusMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!validate()) return;
-
-    setSubmitting(true);
-    // Demonstration handler simulation
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-    }, 800);
+    setStatusMessage(
+      'Inquiry submission is currently unavailable: no official EAD backend endpoint is connected in this environment.'
+    );
   };
 
-  if (submitted) {
-    return (
-      <div
-        style={{
-          backgroundColor: 'var(--bg-surface)',
-          border: '1px solid var(--border-medium)',
-          borderRadius: 'var(--radius-lg)',
-          padding: 'clamp(2rem, 5vw, 3.5rem)',
-          textAlign: 'center'
-        }}
-      >
-        <div
-          style={{
-            width: '48px',
-            height: '48px',
-            borderRadius: '50%',
-            backgroundColor: 'rgba(201, 208, 210, 0.1)',
-            border: '1px solid var(--text-primary)',
-            color: 'var(--text-white)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            margin: '0 auto 1.5rem',
-            fontSize: '1.25rem'
-          }}
-        >
-          ✓
-        </div>
-        <h3 style={{ fontSize: '1.75rem', marginBottom: '0.75rem' }}>
-          {formCopy.successTitle}
-        </h3>
-        <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', maxWidth: '440px', margin: '0 auto 2rem' }}>
-          {formCopy.successMessage}
-        </p>
-        <button
-          onClick={() => {
-            setFormData({ name: '', company: '', email: '', budget: '', message: '' });
-            setSubmitted(false);
-          }}
-          className="btn-secondary"
-        >
-          {lang === 'pl' ? 'Wyślij kolejną wiadomość' : 'Send Another Message'}
-        </button>
-      </div>
-    );
-  }
+  const inputStyle = {
+    width: '100%',
+    padding: '0.85rem 1rem',
+    backgroundColor: 'rgba(5, 14, 10, 0.85)',
+    border: '1px solid rgba(116, 170, 80, 0.25)',
+    borderRadius: '10px',
+    color: 'var(--text-white)',
+    fontSize: '0.9375rem',
+    outline: 'none'
+  };
+
+  const labelStyle = {
+    display: 'block',
+    fontSize: '0.84375rem',
+    color: 'var(--text-muted)',
+    marginBottom: '0.45rem'
+  };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      noValidate
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '2rem'
-      }}
-    >
-      {/* Name & Company (2 columns on desktop) */}
+    <form onSubmit={handleSubmit} noValidate style={{ display: 'flex', flexDirection: 'column', gap: '1.35rem' }}>
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-          gap: '1.5rem'
+          padding: '0.85rem 1rem',
+          borderRadius: '10px',
+          border: '1px solid rgba(116, 170, 80, 0.3)',
+          background: 'rgba(0, 119, 73, 0.14)',
+          fontSize: '0.84375rem',
+          color: 'rgba(220, 234, 226, 0.92)',
+          lineHeight: 1.5
         }}
       >
-        {/* Name Field */}
+        {t.contactPage.formNotice}
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.15rem' }}>
         <div>
-          <label
-            htmlFor="contact-name"
-            style={{
-              display: 'block',
-              fontSize: '0.875rem',
-              color: 'var(--text-muted)',
-              marginBottom: '0.5rem'
-            }}
-          >
-            {formCopy.nameLabel} <span style={{ color: 'var(--text-primary)' }}>*</span>
+          <label htmlFor="edp-contact-name" style={labelStyle}>
+            Full Name
           </label>
           <input
-            id="contact-name"
+            id="edp-contact-name"
             type="text"
-            required
-            placeholder={formCopy.namePlaceholder}
+            placeholder="Your name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            style={{
-              width: '100%',
-              padding: '0.875rem 1rem',
-              backgroundColor: 'var(--bg-surface)',
-              border: `1.5px solid ${errors.name ? '#e57373' : 'var(--border-subtle)'}`,
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-white)',
-              fontSize: '0.9375rem',
-              outline: 'none',
-              transition: 'border-color 0.2s ease'
-            }}
+            style={inputStyle}
           />
-          {errors.name && (
-            <p style={{ color: '#e57373', fontSize: '0.75rem', marginTop: '0.35rem' }}>
-              {errors.name}
-            </p>
-          )}
         </div>
-
-        {/* Company Field */}
         <div>
-          <label
-            htmlFor="contact-company"
-            style={{
-              display: 'block',
-              fontSize: '0.875rem',
-              color: 'var(--text-muted)',
-              marginBottom: '0.5rem'
-            }}
-          >
-            {formCopy.companyLabel}
+          <label htmlFor="edp-contact-org" style={labelStyle}>
+            Organization / Entity
           </label>
           <input
-            id="contact-company"
+            id="edp-contact-org"
             type="text"
-            placeholder={formCopy.companyPlaceholder}
-            value={formData.company}
-            onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-            style={{
-              width: '100%',
-              padding: '0.875rem 1rem',
-              backgroundColor: 'var(--bg-surface)',
-              border: '1.5px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-white)',
-              fontSize: '0.9375rem',
-              outline: 'none',
-              transition: 'border-color 0.2s ease'
-            }}
+            placeholder="Organization or research institution"
+            value={formData.organization}
+            onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
+            style={inputStyle}
           />
         </div>
       </div>
 
-      {/* Email Field */}
-      <div>
-        <label
-          htmlFor="contact-email"
-          style={{
-            display: 'block',
-            fontSize: '0.875rem',
-            color: 'var(--text-muted)',
-            marginBottom: '0.5rem'
-          }}
-        >
-          {formCopy.emailLabel} <span style={{ color: 'var(--text-primary)' }}>*</span>
-        </label>
-        <input
-          id="contact-email"
-          type="email"
-          required
-          placeholder={formCopy.emailPlaceholder}
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          style={{
-            width: '100%',
-            padding: '0.875rem 1rem',
-            backgroundColor: 'var(--bg-surface)',
-            border: `1.5px solid ${errors.email ? '#e57373' : 'var(--border-subtle)'}`,
-            borderRadius: 'var(--radius-md)',
-            color: 'var(--text-white)',
-            fontSize: '0.9375rem',
-            outline: 'none',
-            transition: 'border-color 0.2s ease'
-          }}
-        />
-        {errors.email && (
-          <p style={{ color: '#e57373', fontSize: '0.75rem', marginTop: '0.35rem' }}>
-            {errors.email}
-          </p>
-        )}
-      </div>
-
-      {/* Budget Selection Pills */}
-      <div>
-        <label
-          style={{
-            display: 'block',
-            fontSize: '0.875rem',
-            color: 'var(--text-muted)',
-            marginBottom: '0.75rem'
-          }}
-        >
-          {formCopy.budgetLabel} <span style={{ color: 'var(--text-primary)' }}>*</span>
-        </label>
-        <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.75rem'
-          }}
-        >
-          {formCopy.budgetOptions.map((opt) => {
-            const isSelected = formData.budget === opt;
-            return (
-              <button
-                key={opt}
-                type="button"
-                onClick={() => setFormData({ ...formData, budget: opt })}
-                style={{
-                  padding: '0.65rem 1.15rem',
-                  borderRadius: 'var(--radius-md)',
-                  backgroundColor: isSelected ? 'var(--text-primary)' : 'var(--bg-surface)',
-                  color: isSelected ? 'var(--text-dark)' : 'var(--text-primary)',
-                  border: isSelected ? '1.5px solid var(--text-primary)' : '1.5px solid var(--border-subtle)',
-                  fontSize: '0.875rem',
-                  fontWeight: isSelected ? 500 : 400,
-                  transition: 'all 0.2s ease'
-                }}
-              >
-                {opt}
-              </button>
-            );
-          })}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.15rem' }}>
+        <div>
+          <label htmlFor="edp-contact-email" style={labelStyle}>
+            Email Address
+          </label>
+          <input
+            id="edp-contact-email"
+            type="email"
+            placeholder="name@organization.ae"
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            style={inputStyle}
+          />
         </div>
-        {errors.budget && (
-          <p style={{ color: '#e57373', fontSize: '0.75rem', marginTop: '0.5rem' }}>
-            {errors.budget}
-          </p>
-        )}
+        <div>
+          <label htmlFor="edp-contact-topic" style={labelStyle}>
+            Inquiry Area
+          </label>
+          <select
+            id="edp-contact-topic"
+            value={formData.topic}
+            onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
+            style={inputStyle}
+          >
+            <option value="">Select an area</option>
+            <option value="datasets">Environmental Datasets</option>
+            <option value="applications">Digital Applications</option>
+            <option value="catalogue">Data Catalogue</option>
+            <option value="general">General Platform Inquiry</option>
+          </select>
+        </div>
       </div>
 
-      {/* Message Textarea */}
       <div>
-        <label
-          htmlFor="contact-message"
-          style={{
-            display: 'block',
-            fontSize: '0.875rem',
-            color: 'var(--text-muted)',
-            marginBottom: '0.5rem'
-          }}
-        >
-          {formCopy.messageLabel} <span style={{ color: 'var(--text-primary)' }}>*</span>
+        <label htmlFor="edp-contact-message" style={labelStyle}>
+          Message
         </label>
         <textarea
-          id="contact-message"
-          required
-          rows={5}
-          placeholder={formCopy.messagePlaceholder}
+          id="edp-contact-message"
+          rows={4}
+          placeholder="Describe your environmental data or platform inquiry..."
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          style={{
-            width: '100%',
-            padding: '1rem',
-            backgroundColor: 'var(--bg-surface)',
-            border: `1.5px solid ${errors.message ? '#e57373' : 'var(--border-subtle)'}`,
-            borderRadius: 'var(--radius-md)',
-            color: 'var(--text-white)',
-            fontSize: '0.9375rem',
-            lineHeight: 1.6,
-            outline: 'none',
-            resize: 'vertical',
-            transition: 'border-color 0.2s ease'
-          }}
+          style={{ ...inputStyle, resize: 'vertical' }}
         />
-        {errors.message && (
-          <p style={{ color: '#e57373', fontSize: '0.75rem', marginTop: '0.35rem' }}>
-            {errors.message}
-          </p>
-        )}
       </div>
 
-      {/* Submit Button */}
+      {statusMessage && (
+        <p role="status" style={{ fontSize: '0.875rem', color: '#f2b8b5', margin: 0, lineHeight: 1.5 }}>
+          {statusMessage}
+        </p>
+      )}
+
       <div>
         <button
           type="submit"
-          disabled={submitting}
-          className="btn-primary"
-          style={{ width: '100%', padding: '1rem', opacity: submitting ? 0.7 : 1 }}
+          disabled
+          aria-disabled="true"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            padding: '0.78rem 1.6rem',
+            borderRadius: '9999px',
+            border: '1px solid rgba(116, 170, 80, 0.35)',
+            background: 'rgba(10, 26, 18, 0.6)',
+            color: 'rgba(212, 220, 216, 0.72)',
+            fontSize: '0.875rem',
+            fontWeight: 500,
+            cursor: 'not-allowed'
+          }}
         >
-          <RollText text={submitting ? formCopy.submitting : formCopy.submit} />
+          <span>Submission Unavailable (No Backend Endpoint)</span>
         </button>
       </div>
-
-      {/* Privacy Policy Note */}
-      <p style={{ fontSize: '0.8125rem', color: 'var(--text-dimmed)', lineHeight: 1.5 }}>
-        {formCopy.privacyNote}{' '}
-        <Link
-          to={getPath('/pp')}
-          style={{ color: 'var(--text-muted)', textDecoration: 'underline', textUnderlineOffset: '3px' }}
-        >
-          {t.footer.privacy}
-        </Link>
-      </p>
     </form>
   );
 };

@@ -5,597 +5,300 @@ export const siteContent = {
       aboutUs: 'About Us',
       applications: 'Applications',
       catalogues: 'Catalogues',
+      datasets: 'Datasets',
       contactUs: 'Contact Us',
       signIn: 'Sign In',
       work: 'Applications',
       about: 'About Us',
       contact: 'Contact Us',
-      startProject: 'Start a Project'
+      startProject: 'Explore Platform'
     },
     hero: {
       tagline: 'One Platform. Connected Environmental Data. Smarter Decisions.',
-      description: "Discover, explore, and understand Abu Dhabi's environmental data through one unified platform.",
+      description:
+        "Discover, explore, and understand Abu Dhabi's environmental data through one unified platform.",
       cta: 'Explore the Platform'
     },
-    aboutMe: {
-      title: 'About me',
-      lead: 'I’m a freelance multidisciplinary designer with 15 years of experience helping startups and established brands turn business goals into distinctive visual systems, leading projects from direction to delivery. In a landscape increasingly shaped by shortcuts and sameness, I create work rooted in what makes each business distinct and designed to deliver lasting value.',
-      learnMore: 'Learn More →'
-    },
-    stats: {
-      years: '15',
-      yearsLabel: 'Years in design',
-      features: 'Features & recognitions',
-      featuresSub: 'Awwwards, FWA, SiteInspire, Brand New',
-      brands: '110+',
-      brandsLabel: 'Brands designed for, and counting…'
-    },
     services: {
-      title: 'What I Do',
-      learnMore: 'Learn More →',
+      title: 'Platform Capabilities',
+      learnMore: 'Explore →',
       tabs: [
         {
-          id: 'brand',
-          name: 'Brand Identity',
-          lead: 'The strategic anchor for your entire presence. I bring clarity to complex business concepts by building a sharp, unified visual system designed to scale with consistency across every digital and physical brand touchpoint.',
+          id: 'environmental-data',
+          name: 'Environmental Data',
+          lead: 'Centralized access to environmental datasets covering biodiversity, air quality, water resources, soil, marine ecosystems, and waste management.',
           capabilities: [
-            'Creative Direction',
-            'Visual Language',
-            'Brand Systems',
-            'Logo Design',
-            'Rebranding',
-            'Motion',
-            'Implementation'
+            'Structured Environmental Datasets',
+            'Domain Catalogue Organization',
+            'Standardized Metadata',
+            'Cross-Domain Discovery'
           ]
         },
         {
-          id: 'websites',
-          name: 'Websites',
-          lead: 'Where positioning meets digital execution. I design websites that reflect the true weight of your operations. No generic templates. Just a focused visual narrative built to establish trust and prompt serious inquiries.',
+          id: 'geospatial',
+          name: 'Geospatial Intelligence',
+          lead: "Interactive GIS mapping, satellite monitoring, and spatial analytics across Abu Dhabi's coastal, marine, and terrestrial environments.",
           capabilities: [
-            'Web Design',
-            'UX Design',
-            'Information Architecture',
-            'Copywriting',
-            'Framer Implementation',
-            'Interaction',
-            'Motion',
-            'Audits'
+            'Interactive Spatial Layers',
+            'Satellite Change Detection',
+            'Habitat & Coastal Mapping',
+            'Environmental Baselines'
           ]
         },
         {
-          id: 'product',
-          name: 'Product Design',
-          lead: 'Turning raw concepts into a complete digital product. I handle the complete design process, defining how your product works, looks, and feels in action. From intuitive UX and sharp UI to interactive motion and a design system built to scale.',
+          id: 'applications',
+          name: 'Digital Applications',
+          lead: 'Specialized environmental portals, AI assistants, and monitoring applications built for researchers, policymakers, and the public.',
           capabilities: [
-            'UI Design',
-            'UX Design',
-            'Information Architecture',
-            'Wireframing',
-            'Prototyping',
-            'Interaction',
-            'Motion',
-            'Design Systems',
-            'Development Handoff'
+            'Enviroportal & Air Quality Portal',
+            'AI-Assisted Discovery',
+            'Biodiversity & Marine Tracking',
+            'Monitoring Dashboards'
           ]
         }
       ]
     },
     recentWork: {
-      title: 'Recent Work',
-      seeProject: 'See Project',
-      exploreIndex: 'Explore more work in the Project Index →'
+      title: 'Platform Applications',
+      seeProject: 'Explore Application',
+      exploreIndex: 'Explore Data Catalogue →'
     },
     ctaBanner: {
-      title: 'Your business is better than it looks.',
-      subtitle: 'You bring the challenge, I take care of defining and delivering the right solution.',
-      text: 'Ready for a change? I’m open to focused projects, ongoing collaborations and full-time or part-time roles.',
-      button: 'Start a Project'
+      title: 'Connected Environmental Intelligence for Abu Dhabi.',
+      subtitle:
+        'Explore environmental datasets, geospatial insights, and digital applications across one unified platform.',
+      text: 'Designed for researchers, environmental specialists, planners, and the public.',
+      button: 'Contact EAD EDP'
     },
     footer: {
-      studio: 'Fragment Studio',
-      designer: 'Paweł Świniarski',
-      location: 'Gdynia, Poland',
-      contactLabel: 'Get in touch:',
-      email: 'pawel@fragment.im',
-      copyright: '© 2026 Fragment Studio, All rights reserved.',
+      studio: 'Environment Agency – Abu Dhabi (EAD)',
+      designer: 'Environmental Data Platform (EDP) – Phase II',
+      location: 'Abu Dhabi, UAE',
+      contactLabel: 'Platform Inquiries:',
+      email: '',
+      copyright: '© 2026 Abu Dhabi Government. All rights reserved.',
       privacy: 'Privacy Policy'
     },
     workPage: {
-      title: 'Recent Projects',
-      lead: 'Projects created to bring more clarity, consistency and character to the business behind them.',
-      exploreIndexLead: 'More work. Less explanation. A broader selection of work from across the years.',
-      indexCta: 'Explore Project Index'
+      title: 'Digital Environmental Applications',
+      lead: "Explore EAD's digital environmental applications designed to monitor, analyse, and understand Abu Dhabi's environment through connected data and innovative solutions.",
+      exploreIndexLead:
+        'Browse environmental data categories across air, water, land, marine, and biodiversity domains.',
+      indexCta: 'Explore Data Catalogue'
     },
     projectIndexPage: {
-      title: 'Project Index',
-      lead: 'More work. Less explanation. A broader selection of work from across the years.'
+      title: 'Environmental Data Catalogue',
+      lead: 'Discover environmental information across verified domains—from ecosystems and groundwater to air quality, marine water, and protected areas.'
+    },
+    datasetsPage: {
+      title: 'Environmental Datasets',
+      lead: 'Discover and explore environmental datasets across air, water, land, and biodiversity domains to support research and informed decisions.'
     },
     aboutPage: {
-      heroTitle: 'One partner. Full-scale execution.',
-      heroLead: 'From identity systems to digital experiences, I stay close to both the big picture and the final detail.',
-      profileRole: 'Independent Multidisciplinary Designer',
-      bioParagraphs: [
-        'I’ve always worked across different design disciplines rather than narrowing myself down to one. Over time, that breadth has shaped how I solve problems: seeing how brand identity, website architecture, and digital product workflows can reinforce each other instead of living in silos.',
-        'I’m comfortable moving from early direction into detailed execution, across identity, web and product, while keeping the standard high through every step. You work directly with me—the person defining the ideas and delivering the work.',
-        'After 15 years of agency and independent work, I now work directly with companies and teams, taking responsibility for the end-to-end creative direction and execution.'
+      heroTitle: 'Connecting Environmental Data. Empowering Better Decisions.',
+      heroLead:
+        'The Environment Agency – Abu Dhabi (EAD) Environmental Data Platform brings together diverse environmental datasets, geospatial intelligence, and digital applications in one unified ecosystem.',
+      overviewLabel: 'ABOUT THE PLATFORM',
+      overviewTitle: 'A Unified Environmental Knowledge Ecosystem',
+      overviewParagraphs: [
+        'The Environmental Data Platform (EDP) serves as a centralized gateway for discovering, exploring, and understanding environmental information across Abu Dhabi. By connecting data from field monitoring, satellite observation, and specialized research programmes, the platform helps transform raw environmental records into actionable insights.',
+        'Whether supporting scientific research, environmental impact assessment, policy planning, or public environmental awareness, EDP reduces fragmentation by organizing datasets, spatial layers, and interactive applications into a single coherent experience.'
       ],
-      approachTitle: 'Approach',
-      approachSteps: [
+      pillarsTitle: 'Core Pillars of the Platform',
+      pillars: [
         {
           num: '01',
-          title: 'Direction',
-          text: 'Defining a clear creative direction that gives the brand a focused, distinctive and consistent presence from the start.'
+          title: 'Environmental Datasets & Resources',
+          text: 'Structured access to environmental information spanning ecosystems, groundwater, soil, air quality, marine water quality, fisheries, waste management, and protected areas.'
         },
         {
           num: '02',
-          title: 'Design',
-          text: 'Turning that direction into coherent visual systems and digital experiences that work as one, not as separate parts.'
+          title: 'Geospatial Information & Interactive Mapping',
+          text: "Spatial layers, satellite-derived change detection, and coastal and terrestrial mapping that place environmental conditions in clear geographic context across Abu Dhabi."
         },
         {
           num: '03',
-          title: 'Execution',
-          text: 'Taking the work all the way to delivery, so every touchpoint feels resolved, consistent and true to the original concept.'
+          title: 'Digital Environmental Applications',
+          text: 'Dedicated web portals, AI-assisted discovery tools, and specialized monitoring applications tailored to researchers, specialists, decision-makers, and the community.'
         }
       ],
-      whyMeTitle: 'Why Me',
-      whyMeLead: 'The quality of the outcome depends on the decisions behind it.',
-      whyMePoints: [
+      valueTitle: 'Supporting Discovery, Analysis & Decision-Making',
+      valueLead:
+        'Designed to make environmental data easier to find, interpret, and apply across every stage of research and planning.',
+      valuePoints: [
         {
-          title: 'Direct Collaboration',
-          text: 'You work directly with the designer making the creative choices. No account managers, no diluted feedback, no lost context.'
+          title: 'Unified Environmental Discovery',
+          text: 'Navigate across environmental domains and applications from one connected entry point rather than searching isolated portals.'
         },
         {
-          title: 'Cross-disciplinary Thinking',
-          text: 'Brand, web and product are designed together to ensure your visual identity and user experience feel coherent across all channels.'
+          title: 'Spatial & Analytical Context',
+          text: 'Combine tabular environmental records with geospatial layers and visual monitoring tools to understand change over time.'
         },
         {
-          title: 'Full Ownership',
-          text: 'From initial concept to final polish, I take end-to-end responsibility for the creative output, ensuring high fidelity delivery.'
+          title: 'Accessible Digital Tools',
+          text: 'Use purpose-built applications such as Enviroportal, Air Quality Portal, Abu Dhabi Nature, and AI assistants for guided exploration.'
         },
         {
-          title: 'Deep Expertise',
-          text: 'Over 15 years of refining crafts across brand strategy, modern typography, responsive engineering, and digital interfaces.'
-        }
-      ],
-      waysToWorkTitle: 'Ways to Work Together',
-      waysToWorkItems: [
-        {
-          title: 'Focused Projects',
-          text: 'A defined scope with clear milestones and deliverables, from visual identity to website launches.'
-        },
-        {
-          title: 'Ongoing Collaboration',
-          text: 'Continuous design partnership for scaling companies that need steady creative direction and delivery.'
-        },
-        {
-          title: 'Within Your Team',
-          text: 'Embedded design leadership or senior execution for critical product launches and brand evolution.'
+          title: 'Evidence-Informed Decisions',
+          text: 'Provide policymakers, planners, and researchers with clearer environmental visibility to support sustainable stewardship.'
         }
       ]
     },
     contactPage: {
-      title: 'Get in touch',
-      portraitQuote: 'Making something can seem easy. Knowing what’s right, what isn’t and why takes expertise.',
-      availability: 'I’m open to focused projects, ongoing collaborations and full-time or part-time opportunities.',
-      form: {
-        nameLabel: 'Name',
-        namePlaceholder: 'Your name',
-        companyLabel: 'Company',
-        companyPlaceholder: 'Company or studio name',
-        emailLabel: 'Email',
-        emailPlaceholder: 'your@email.com',
-        budgetLabel: 'Estimated Budget',
-        budgetOptions: [
-          '< €2,500',
-          '€2,500 – €5,000',
-          '€5,000 – €7,500',
-          '€7,500 – €10,000',
-          '€10,000+'
-        ],
-        messageLabel: 'How can I help?',
-        messagePlaceholder: 'Tell me about your project, timeline, and goals...',
-        submit: 'Send Message',
-        submitting: 'Sending...',
-        successTitle: 'Message Received',
-        successMessage: 'Thank you for reaching out! I typically respond within 24–48 hours.',
-        privacyNote: 'Your data will be processed to respond to your inquiry. See Privacy Policy for details.',
-        emailDirect: 'Prefer email? Reach me at:'
-      }
-    },
-    caseStudy: {
-      challenge: 'Challenge',
-      solution: 'Solution',
-      result: 'Result',
-      brandBook: 'Brand Book',
-      beforeAfter: 'Before / After',
-      seeMore: 'See more projects',
-      allProjects: 'All Projects',
-      scope: 'Scope'
-    }
-  },
-  pl: {
-    nav: {
-      home: 'Główna',
-      work: 'Projekty',
-      about: 'O mnie',
-      contact: 'Kontakt',
-      startProject: 'Rozpocznij Projekt'
-    },
-    hero: {
-      tagline: 'Jeden projektant. Jasny kierunek. Pełna realizacja.',
-      description: 'Spójne kierownictwo kreatywne dla marek w zakresie identyfikacji wizualnej, stron internetowych i produktów cyfrowych.',
-      cta: 'Rozpocznij Projekt'
-    },
-    aboutMe: {
-      title: 'O mnie',
-      lead: 'Jestem niezależnym multidyscyplinarnym projektantem z 15-letnim doświadczeniem w przekształcaniu celów biznesowych w wyraziste systemy wizualne – od kierunku po wdrożenie. Tworzę projekty oparte na tym, co czyni każdą markę unikalną i zapewnia trwałą wartość.',
-      learnMore: 'Dowiedz się więcej →'
-    },
-    stats: {
-      years: '15',
-      yearsLabel: 'Lat w projektowaniu',
-      features: 'Wyróżnienia & publikacje',
-      featuresSub: 'Awwwards, FWA, SiteInspire, Brand New',
-      brands: '110+',
-      brandsLabel: 'Zaprojektowanych marek i stale rośnie…'
-    },
-    services: {
-      title: 'Co robię',
-      learnMore: 'Dowiedz się więcej →',
-      tabs: [
-        {
-          id: 'brand',
-          name: 'Identyfikacja Wizualna',
-          lead: 'Strategiczny fundament obecności marki. Nadaję klarowność złożonym koncepcjom biznesowym, budując wyrazisty, spójny system wizualny skalowalny na wszystkie punkty styku.',
-          capabilities: [
-            'Kierownictwo Kreatywne',
-            'Język Wizualny',
-            'Systemy Identyfikacji',
-            'Projekt Logo',
-            'Rebranding',
-            'Animacja',
-            'Wdrożenie'
-          ]
-        },
-        {
-          id: 'websites',
-          name: 'Strony Internetowe',
-          lead: 'Miejsce, w którym pozycjonowanie spotyka się z cyfrową realizacją. Projektuję strony odzwierciedlające rzeczywistą rangę firmy – bez szablonów, z naciskiem na zaufanie i zapytania ofertowe.',
-          capabilities: [
-            'Web Design',
-            'UX Design',
-            'Architektura Informacji',
-            'Copywriting',
-            'Wdrożenia Framer',
-            'Interakcje',
-            'Animacja',
-            'Audyty'
-          ]
-        },
-        {
-          id: 'product',
-          name: 'Projektowanie Produktów',
-          lead: 'Przekładanie idei na gotowy produkt cyfrowy. Od intuicyjnego UX i precyzyjnego UI, po interakcje, animacje i skalowalny system projektowy.',
-          capabilities: [
-            'UI Design',
-            'UX Design',
-            'Architektura Informacji',
-            'Makiety',
-            'Prototypowanie',
-            'Interakcje',
-            'Animacje',
-            'Design Systems',
-            'Handoff Developerski'
-          ]
-        }
-      ]
-    },
-    recentWork: {
-      title: 'Ostatnie Realizacje',
-      seeProject: 'Zobacz Projekt',
-      exploreIndex: 'Więcej prac w Indeksie Projektów →'
-    },
-    ctaBanner: {
-      title: 'Twój biznes zasługuje na lepszy wizerunek.',
-      subtitle: 'Ty przynosisz wyzwanie, ja zajmuję się zdefiniowaniem i wdrożeniem właściwego rozwiązania.',
-      text: 'Czas na zmianę? Jestem otwarty na projekty o określonym zakresie, stałą współpracę oraz wybrane oferty pracy na pełny lub niepełny etat.',
-      button: 'Rozpocznij Projekt'
-    },
-    footer: {
-      studio: 'Fragment Studio',
-      designer: 'Paweł Świniarski',
-      location: 'Gdynia, Polska',
-      contactLabel: 'Skontaktuj się:',
-      email: 'pawel@fragment.im',
-      copyright: '© 2026 Fragment Studio. Wszelkie prawa zastrzeżone.',
-      privacy: 'Polityka Prywatności'
-    },
-    workPage: {
-      title: 'Ostatnie Projekty',
-      lead: 'Projekty stworzone, by wnieść więcej przejrzystości, spójności i charakteru w działania stojących za nimi firm.',
-      exploreIndexLead: 'Więcej prac. Mniej wyjaśnień. Szerszy wybór projektów z minionych lat.',
-      indexCta: 'Przeglądaj Indeks Projektów'
-    },
-    projectIndexPage: {
-      title: 'Indeks Projektów',
-      lead: 'Więcej prac. Mniej wyjaśnień. Szerszy wybór projektów z minionych lat.'
-    },
-    aboutPage: {
-      heroTitle: 'Jeden partner. Pełna realizacja.',
-      heroLead: 'Od systemów tożsamości po doświadczenia cyfrowe – dbam zarówno o całościową wizję, jak i każdy detal.',
-      profileRole: 'Niezależny Multidyscyplinarny Projektant',
-      bioParagraphs: [
-        'Zawsze pracowałem na styku różnych dyscyplin projektowych. To ukształtowało sposób rozwiązywania problemów: postrzeganie tożsamości marki, architektury strony www i aplikacji cyfrowych jako wzajemnie wzmacniającego się ekosystemu.',
-        'Swobodnie przechodzę od wstępnego konceptu do precyzyjnego wdrożenia, utrzymując najwyższy standard na każdym etapie. Pracujesz bezpośrednio ze mną – osobą odpowiedzialną za pomysł i jego wykonanie.',
-        'Po 15 latach pracy w agencjach i na własny rachunek, współpracuję bezpośrednio z firmami i zespołami produktowymi.'
-      ],
-      approachTitle: 'Podejście',
-      approachSteps: [
-        {
-          num: '01',
-          title: 'Kierunek',
-          text: 'Definiowanie wyrazistego kierunku kreatywnego, dającego marce czytelną i spójną obecność od samego początku.'
-        },
-        {
-          num: '02',
-          title: 'Projekt',
-          text: 'Przekładanie kierunku na harmonijne systemy wizualne i cyfrowe doświadczenia działające jako jedna całość.'
-        },
-        {
-          num: '03',
-          title: 'Wdrożenie',
-          text: 'Doprowadzenie projektu do finalnej publikacji, aby każdy element był dopracowany i zgodny z pierwotną ideą.'
-        }
-      ],
-      whyMeTitle: 'Dlaczego ja',
-      whyMeLead: 'Jakość rezultatu zależy od decyzji, które za nim stoją.',
-      whyMePoints: [
-        {
-          title: 'Bezpośrednia Współpraca',
-          text: 'Pracujesz bezpośrednio z osobą podejmującą decyzje kreatywne. Bez pośredników, bez rozmywania informacji zwrotnych.'
-        },
-        {
-          title: 'Myślenie Holistyczne',
-          text: 'Marka, strona www i produkt cyfrowy powstają wspólnie, tworząc jedno spójne doświadczenie.'
-        },
-        {
-          title: 'Pełna Odpowiedzialność',
-          text: 'Od wstępnego szkicu po ostatni piksel biorę pełną odpowiedzialność za jakość wykonania.'
-        },
-        {
-          title: 'Doświadczenie',
-          text: '15 lat doskonalenia rzemiosła w typografii, architekturze informacji i nowoczesnym designie cyfrowym.'
-        }
-      ],
-      waysToWorkTitle: 'Formy Współpracy',
-      waysToWorkItems: [
-        {
-          title: 'Projekty Dedykowane',
-          text: 'Konkretny zakres z jasnym harmonogramem – od rebrandingu po wdrożenie nowego serwisu www.'
-        },
-        {
-          title: 'Stała Współpraca',
-          text: 'Ciągłe partnerstwo kreatywne dla rozwijających się firm potrzebujących stabilnego kierownictwa artystycznego.'
-        },
-        {
-          title: 'Wewnątrz Zespołu',
-          text: 'Wsparcie kluczowych premier produktowych i ewolucji marki bezpośrednio w strukturach zespołu.'
-        }
-      ]
-    },
-    contactPage: {
-      title: 'Skontaktuj się',
-      portraitQuote: 'Samo stworzenie czegoś może wydawać się łatwe. Wiedzieć, co jest właściwe, co nie i dlaczego, wymaga doświadczenia.',
-      availability: 'Jestem otwarty na projekty o określonym zakresie, stałą współpracę oraz wybrane oferty pracy na pełny lub niepełny etat.',
-      form: {
-        nameLabel: 'Imię i nazwisko',
-        namePlaceholder: 'Twoje imię',
-        companyLabel: 'Firma',
-        companyPlaceholder: 'Nazwa firmy lub projektu',
-        emailLabel: 'Email',
-        emailPlaceholder: 'twoj@email.com',
-        budgetLabel: 'Szacowany budżet',
-        budgetOptions: [
-          'Poniżej 10 000 zł',
-          '10 000 – 20 000 zł',
-          '20 000 – 30 000 zł',
-          '30 000 – 40 000 zł',
-          '40 000 zł+'
-        ],
-        messageLabel: 'W czym mogę pomóc?',
-        messagePlaceholder: 'Opisz swój projekt, cele i przybliżony harmonogram...',
-        submit: 'Wyślij Wiadomość',
-        submitting: 'Wysyłanie...',
-        successTitle: 'Wiadomość Wysłana',
-        successMessage: 'Dziękuję za kontakt! Zazwyczaj odpowiadam w ciągu 24–48 godzin.',
-        privacyNote: 'Twoje dane zostaną przetworzone w celu odpowiedzi na zapytanie. Szczegóły znajdziesz w Polityce Prywatności.',
-        emailDirect: 'Wolisz e-mail? Napisz bezpośrednio na:'
-      }
-    },
-    caseStudy: {
-      challenge: 'Wyzwanie',
-      solution: 'Rozwiązanie',
-      result: 'Rezultat',
-      brandBook: 'Księga Znaku',
-      beforeAfter: 'Przed / Po',
-      seeMore: 'Zobacz więcej projektów',
-      allProjects: 'Wszystkie Projekty',
-      scope: 'Zakres'
+      title: 'Contact & Platform Inquiries',
+      lead: 'Connect with the Environment Agency – Abu Dhabi (EAD) Environmental Data Platform team regarding platform access, environmental datasets, or digital applications.',
+      availability:
+        'Official EAD EDP contact channels and backend inquiry routing are currently pending confirmation for this Phase II environment.',
+      formNotice:
+        'Note: Live form submission is not yet connected to an official EAD backend endpoint. No data is transmitted from this preview form.'
     }
   },
   ar: {
     nav: {
       home: 'الرئيسية',
-      aboutUs: 'من نحن',
+      aboutUs: 'عن المنصة',
       applications: 'التطبيقات',
-      catalogues: 'الكتالوجات',
+      catalogues: 'الفهارس',
+      datasets: 'البيانات',
       contactUs: 'تواصل معنا',
       signIn: 'تسجيل الدخول',
       work: 'التطبيقات',
-      about: 'من نحن',
+      about: 'عن المنصة',
       contact: 'تواصل معنا',
-      startProject: 'ابدأ مشروعاً'
+      startProject: 'استكشف المنصة'
     },
     hero: {
       tagline: 'منصة واحدة. بيانات بيئية مترابطة. قرارات أذكى.',
-      description: 'اكتشف واستكشف وافهم البيانات البيئية لإمارة أبوظبي عبر منصة موحدة واحدة.',
+      description: 'اكتشف واستكشف وافهم البيانات البيئية لإمارة أبوظبي من خلال منصة موحدة.',
       cta: 'استكشف المنصة'
     },
-    aboutMe: {
-      title: 'من نحن',
-      lead: 'أعمل كمصمم مستقل متعدد التخصصات بخبرة تمتد لـ 15 عاماً في مساعدة الشركات الناشئة والعلامات الرائدة على تحويل أهداف الأعمال إلى أنظمة بصرية مميزة من التوجيه إلى التسليم.',
-      learnMore: 'اعرف المزيد →'
-    },
-    stats: {
-      years: '15',
-      yearsLabel: 'سنوات في التصميم',
-      features: 'التكريمات والجوائز',
-      featuresSub: 'Awwwards, FWA, SiteInspire, Brand New',
-      brands: '110+',
-      brandsLabel: 'علامة تجارية تم تصميمها وما زال العدد يزداد…'
-    },
     services: {
-      title: 'ما نقدمه',
-      learnMore: 'اعرف المزيد →',
+      title: 'قدرات المنصة',
+      learnMore: 'استكشف ←',
       tabs: [
         {
-          id: 'brand',
-          name: 'الهوية البصرية',
-          lead: 'الركيزة الاستراتيجية لحضورك الكامل عبر بناء نظام بصري موحد وقابل للتوسع.',
+          id: 'environmental-data',
+          name: 'البيانات البيئية',
+          lead: 'وصول مركزي إلى مجموعات البيانات البيئية التي تغطي التنوع البيولوجي وجودة الهواء والموارد المائية والتربة والبيئة البحرية وإدارة النفايات.',
           capabilities: [
-            'التوجيه الإبداعي',
-            'اللغة البصرية',
-            'أنظمة العلامات التجارية',
-            'تصميم الشعارات',
-            'إعادة التموضع',
-            'الحركة',
-            'التنفيذ'
+            'مجموعات بيانات بيئية منظمة',
+            'تصنيف الفهارس البيئية',
+            'بيانات وصفية موحدة',
+            'استكشاف متعدد المجالات'
           ]
         },
         {
-          id: 'websites',
-          name: 'المواقع الإلكترونية',
-          lead: 'مواقع تعكس القيمة الحقيقية لأعمالك بسرد بصري متكامل يعزز الثقة.',
+          id: 'geospatial',
+          name: 'الذكاء الجغرافي المكاني',
+          lead: 'خرائط تفاعلية لنظم المعلومات الجغرافية ورصد عبر الأقمار الصناعية وتحليلات مكانية للبيئات الساحلية والبحرية والبرية في أبوظبي.',
           capabilities: [
-            'تصميم الويب',
-            'تجربة المستخدم',
-            'هيكلة المعلومات',
-            'كتابة المحتوى',
-            'التفاعل',
-            'الحركة',
-            'التدقيق'
+            'طبقات مكانية تفاعلية',
+            'رصد التغيرات عبر الأقمار الصناعية',
+            'خرائط الموائل والسواحل',
+            'خطوط الأساس البيئية'
           ]
         },
         {
-          id: 'product',
-          name: 'تصميم المنتجات',
-          lead: 'تحويل الأفكار إلى منتجات رقمية متكاملة من تجربة المستخدم إلى أنظمة التصميم.',
+          id: 'applications',
+          name: 'التطبيقات الرقمية',
+          lead: 'بوابات بيئية متخصصة ومساعدات ذكاء اصطناعي وتطبيقات رصد مصممة للباحثين وصناع القرار والجمهور.',
           capabilities: [
-            'تصميم الواجهات',
-            'تجربة المستخدم',
-            'النماذج الأولية',
-            'التفاعل',
-            'أنظمة التصميم',
-            'التسليم البرمجي'
+            'بوابة البيئة وجودة الهواء',
+            'الاستكشاف المدعوم بالذكاء الاصطناعي',
+            'تتبع التنوع البيولوجي والبحري',
+            'لوحات متابعة الرصد البيئي'
           ]
         }
       ]
     },
     recentWork: {
-      title: 'أحدث الأعمال',
-      seeProject: 'عرض المشروع',
-      exploreIndex: 'استكشف المزيد في فهرس المشاريع →'
+      title: 'تطبيقات المنصة',
+      seeProject: 'استكشف التطبيق',
+      exploreIndex: 'استكشف فهرس البيانات ←'
     },
     ctaBanner: {
-      title: 'أعمالك تستحق مظهراً أفضل.',
-      subtitle: 'أنت تطرح التحدي، وأنا أتولى تحديد وتقديم الحل المناسب.',
-      text: 'هل أنت مستعد للتغيير؟ متاح للمشاريع المركزة والتعاون المستمر.',
-      button: 'ابدأ مشروعاً'
+      title: 'ذكاء بيئي مترابط لإمارة أبوظبي.',
+      subtitle: 'استكشف البيانات البيئية والرؤى الجغرافية والتطبيقات الرقمية عبر منصة موحدة.',
+      text: 'مصممة للباحثين والمختصين البيئيين والمخططين والجمهور.',
+      button: 'تواصل مع المنصة'
     },
     footer: {
-      studio: 'Fragment Studio',
-      designer: 'Paweł Świniarski',
-      location: 'Gdynia, Poland',
-      contactLabel: 'تواصل معنا:',
-      email: 'pawel@fragment.im',
-      copyright: '© 2026 جميع الحقوق محفوظة.',
+      studio: 'هيئة البيئة – أبوظبي (EAD)',
+      designer: 'منصة البيانات البيئية – المرحلة الثانية',
+      location: 'أبوظبي، الإمارات العربية المتحدة',
+      contactLabel: 'استفسارات المنصة:',
+      email: '',
+      copyright: '© 2026 حكومة أبوظبي. جميع الحقوق محفوظة.',
       privacy: 'سياسة الخصوصية'
     },
     workPage: {
-      title: 'المشاريع الحديثة',
-      lead: 'مشاريع صُممت لمنح العلامات التجارية وضوحاً واتساقاً وتميزاً أكبر.',
-      exploreIndexLead: 'مزيد من الأعمال المختارة عبر السنوات.',
-      indexCta: 'استكشف فهرس المشاريع'
+      title: 'التطبيقات البيئية الرقمية',
+      lead: 'استكشف التطبيقات الرقمية لهيئة البيئة – أبوظبي المصممة لرصد وتحليل وفهم بيئة أبوظبي عبر بيانات مترابطة وحلول مبتكرة.',
+      exploreIndexLead: 'تصفح فئات البيانات البيئية عبر مجالات الهواء والمياه والأرض والبحار والتنوع البيولوجي.',
+      indexCta: 'استكشف فهرس البيانات'
     },
     projectIndexPage: {
-      title: 'الكتالوجات وفهرس المشاريع',
-      lead: 'مجموعة مختارة من المشاريع والأنظمة الرقمية عبر السنوات.'
+      title: 'فهرس البيانات البيئية',
+      lead: 'اكتشف المعلومات البيئية عبر المجالات المعتمدة — من النظم البيئية والمياه الجوفية إلى جودة الهواء والمياه البحرية والمناطق المحمية.'
+    },
+    datasetsPage: {
+      title: 'مجموعات البيانات البيئية',
+      lead: 'اكتشف واستكشف مجموعات البيانات البيئية عبر مجالات الهواء والمياه والأرض والتنوع البيولوجي لدعم البحث واتخاذ القرار.'
     },
     aboutPage: {
-      heroTitle: 'شريك واحد. تنفيذ متكامل.',
-      heroLead: 'من أنظمة الهوية إلى التجارب الرقمية، نهتم بالرؤية الشاملة وأدق التفاصيل.',
-      profileRole: 'مصمم مستقل متعدد التخصصات',
-      bioParagraphs: [
-        'نعمل عبر مختلف تخصصات التصميم لربط الهوية البصرية بهندسة المواقع وتدفقات المنتجات الرقمية في منظومة متكاملة.',
-        'من التوجيه الأولي إلى التنفيذ الدقيق مع الحفاظ على أعلى معايير الجودة في كل خطوة.'
+      heroTitle: 'ربط البيانات البيئية. تمكين قرارات أفضل.',
+      heroLead:
+        'تجمع منصة البيانات البيئية لهيئة البيئة – أبوظبي بين مجموعات البيانات البيئية المتنوعة والذكاء الجغرافي المكاني والتطبيقات الرقمية في منظومة موحدة.',
+      overviewLabel: 'عن المنصة',
+      overviewTitle: 'منظومة موحدة للمعرفة البيئية',
+      overviewParagraphs: [
+        'تعمل منصة البيانات البيئية كبوابة مركزية لاكتشاف واستكشاف وفهم المعلومات البيئية في أبوظبي، عبر ربط بيانات الرصد الميداني والمراقبة الفضائية وبرامج البحث المتخصصة.',
+        'تدعم المنصة البحث العلمي والتخطيط البيئي والوعي المجتمعي من خلال تنظيم مجموعات البيانات والطبقات المكانية والتطبيقات التفاعلية في تجربة متكاملة.'
       ],
-      approachTitle: 'المنهجية',
-      approachSteps: [
-        { num: '01', title: 'التوجيه', text: 'تحديد مسار إبداعي واضح يمنح العلامة حضوراً متماسكاً.' },
-        { num: '02', title: 'التصميم', text: 'ترجمة الرؤية إلى أنظمة بصرية وتجارب رقمية متناسقة.' },
-        { num: '03', title: 'التنفيذ', text: 'إطلاق متكامل يراعي أدق التفاصيل.' }
+      pillarsTitle: 'الركائز الأساسية للمنصة',
+      pillars: [
+        {
+          num: '01',
+          title: 'مجموعات البيانات والموارد البيئية',
+          text: 'وصول منظم للمعلومات البيئية عبر النظم البيئية والمياه الجوفية والتربة وجودة الهواء والمياه البحرية والثروة السمكية وإدارة النفايات والمناطق المحمية.'
+        },
+        {
+          num: '02',
+          title: 'المعلومات الجغرافية والخرائط التفاعلية',
+          text: 'طبقات مكانية ورصد للتغيرات عبر الأقمار الصناعية وخرائط ساحلية وبرية تضع المؤشرات البيئية في سياق جغرافي واضح.'
+        },
+        {
+          num: '03',
+          title: 'التطبيقات البيئية الرقمية',
+          text: 'بوابات إلكترونية متخصصة وأدوات ذكاء اصطناعي وتطبيقات رصد مصممة للباحثين وصناع القرار والجمهور.'
+        }
       ],
-      whyMeTitle: 'لماذا نحن',
-      whyMeLead: 'جودة النتائج تعتمد على وضوح القرارات وراءها.',
-      whyMePoints: [
-        { title: 'تعاون مباشر', text: 'عمل مباشر دون وسطاء لضمان سرعة ووضوح القرار.' },
-        { title: 'تفكير شمولي', text: 'تكامل الهوية والموقع والمنتج الرقمي في تجربة واحدة.' }
-      ],
-      waysToWorkTitle: 'أساليب العمل',
-      waysToWorkItems: [
-        { title: 'مشاريع محددة', text: 'نطاق عمل واضح وجدول زمني محدد من الإطلاق حتى التسليم.' },
-        { title: 'شراكة مستمرة', text: 'توجيه إبداعي مستمر للفرق والشركات النامية.' }
+      valueTitle: 'دعم الاكتشاف والتحليل واتخاذ القرار',
+      valueLead: 'مصممة لتسهيل الوصول إلى البيانات البيئية وتفسيرها وتطبيقها في التخطيط والبحث.',
+      valuePoints: [
+        {
+          title: 'اكتشاف بيئي موحد',
+          text: 'التنقل بين المجالات والتطبيقات البيئية من نقطة دخول واحدة مترابطة.'
+        },
+        {
+          title: 'سياق مكاني وتحليلي',
+          text: 'دمج السجلات البيئية مع الطبقات الجغرافية وأدوات الرصد لفهم التغيرات عبر الزمن.'
+        },
+        {
+          title: 'أدوات رقمية متخصصة',
+          text: 'الاستفادة من تطبيقات مثل بوابة البيئة وبوابة جودة الهواء وطبيعة أبوظبي والمساعدات الذكية.'
+        },
+        {
+          title: 'قرارات قائمة على الأدلة',
+          text: 'توفير رؤية بيئية أوضح لدعم الاستدامة والحفاظ على الموارد الطبيعية.'
+        }
       ]
     },
     contactPage: {
-      title: 'تواصل معنا',
-      portraitQuote: 'صنع الشيء يبدو سهلاً، لكن معرفة ما ينجح ولماذا هو ما تصنعه الخبرة.',
-      availability: 'متاح للمشاريع المركزة والتعاون المستمر.',
-      form: {
-        nameLabel: 'الاسم الكامل',
-        namePlaceholder: 'اسمك',
-        companyLabel: 'الجهة / الشركة',
-        companyPlaceholder: 'اسم الشركة أو المشروع',
-        emailLabel: 'البريد الإلكتروني',
-        emailPlaceholder: 'you@company.com',
-        budgetLabel: 'الميزانية التقديرية',
-        budgetOptions: [
-          'أقل من 3,000$',
-          '3,000$ – 6,000$',
-          '6,000$ – 10,000$',
-          '10,000$ – 15,000$',
-          'أكثر من 15,000$'
-        ],
-        messageLabel: 'كيف يمكننا المساعدة؟',
-        messagePlaceholder: 'اشرح مشروعك والأهداف والجدول الزمني...',
-        submit: 'إرسال الرسالة',
-        submitting: 'جاري الإرسال...',
-        successTitle: 'تم إرسال الرسالة',
-        successMessage: 'شكراً لتواصلك! نرد عادة خلال 24-48 ساعة.',
-        privacyNote: 'تُستخدم بياناتك فقط للرد على استفسارك.',
-        emailDirect: 'تفضل البريد الإلكتروني؟ راسلنا مباشرة على:'
-      }
-    },
-    caseStudy: {
-      challenge: 'التحدي',
-      solution: 'الحل',
-      result: 'النتيجة',
-      brandBook: 'دليل العلامة',
-      beforeAfter: 'قبل / بعد',
-      seeMore: 'عرض المزيد من المشاريع',
-      allProjects: 'جميع المشاريع',
-      scope: 'النطاق'
+      title: 'التواصل واستفسارات المنصة',
+      lead: 'تواصل مع فريق منصة البيانات البيئية في هيئة البيئة – أبوظبي بشأن الوصول إلى المنصة أو البيانات أو التطبيقات الرقمية.',
+      availability: 'قنوات التواصل الرسمية وربط نموذج الاستفسار قيد التأكيد حالياً في بيئة المرحلة الثانية.',
+      formNotice: 'ملاحظة: نموذج التواصل غير مرتبط حالياً بخادم رسمي ولا يتم إرسال بيانات عبره.'
     }
   }
 };
