@@ -940,7 +940,7 @@ export const HomePage = () => {
     }
   }, [activeTab]);
 
-  // Auto-cycle Datasets tabs smoothly every 3.5s (pauses on hover/focus or reduced motion)
+  // Auto-cycle Datasets tabs smoothly every 2.0s (pauses on hover/focus or reduced motion)
   useEffect(() => {
     if (isDatasetsPaused) return;
     if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -949,7 +949,7 @@ export const HomePage = () => {
 
     const timer = setInterval(() => {
       setActiveDatasetTab((prev) => (prev + 1) % DATASET_TABS.length);
-    }, 3500);
+    }, 2000);
 
     return () => clearInterval(timer);
   }, [isDatasetsPaused, activeDatasetTab]);
@@ -960,7 +960,7 @@ export const HomePage = () => {
       gsap.fromTo(
         datasetsContentRef.current,
         { opacity: 0.55, y: 10 },
-        { opacity: 1, y: 0, duration: 0.38, ease: 'power2.out' }
+        { opacity: 1, y: 0, duration: 0.28, ease: 'power2.out' }
       );
     }
   }, [activeDatasetTab]);
